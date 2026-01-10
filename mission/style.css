@@ -1,0 +1,25 @@
+img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.content {
+    width: 500px;
+    outline: grey solid .5px;
+    padding: 50px 100px 0px 150px;
+    place-self: center;
+}
+
+#mission-statement, #school {
+    text-align: center;
+}
+
+#mission-statement {
+    color: blue;
+}
+
+#desc, #reasons, .list {
+    padding-top: 20px;
+}
