@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Web Development Portfolio">
+    <meta name="author" content="Your Name">
+    <title>Web Development Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="week1.js" defer></script>
-    <meta name="description" content="An in-depth guide to HTML meta tags.">
-    
-    <meta name="author" content="Jane Doe">
 </head>
-
-                  
 <body>
-    <div id="content">
-        <h1>HTML, CSS, and JS</h1>
-        <p>The foundational technologies that power websites and web applications</p>
-        <hr>
-        <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
-        <div id="topics">
-            <h2>HyperText Markup Language</h2>
-            <ul class="list">
-                <li>Defines the structure and content of a web page.</li>
-                <li>Without HTML there's nothing for the browser to display.</li>
+
+    <header class="site-header">
+        <h1>My WDD130 Portfolio</h1>
+        <p>Projects from my Web Development class</p>
+    </header>
+
+    <main class="content">
+        <section class="projects">
+            <h2>Class Projects</h2>
+
+            <ul class="project-list">
+                <li>
+                    <a href="mission/index.html" target="_blank">
+                        Mission Statement Page
+                    </a>
+                </li>
+
+                <li>
+                    <a href="week-1/ponder/index.html" target="_blank">
+                        Week 1 Ponder
+                    </a>
+                </li>
             </ul>
-            <h2>Cascading Style Sheets</h2>
-            <ul class="list">
-                <li>Controls how the HTML elements look.</li>
-                <li>Without CSS pages look plain and unstyled.</li>
-            </ul>
-            <h2>JavaScript</h2>
-            <ul class="list">
-                <li>Adds interactivity and dynamic behavior.</li>
-                <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
-            </ul>
-        </div>
-    </div>                 
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Your Name</p>
+    </footer>
+
 </body>
 </html>
