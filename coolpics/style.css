@@ -28,6 +28,7 @@ img {
     height: 300px;
     width: 300px;
     max-width: 80%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 section {
     margin: 0 auto;
