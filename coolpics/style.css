@@ -15,6 +15,10 @@ nav {
     gap: 20px;
     width: 100%;
 }
+nav.active {
+    display: flex;
+    flex-direction: column;
+}
 main {
     background-color: grey;
     display: grid;
