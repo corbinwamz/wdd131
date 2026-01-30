@@ -13,7 +13,9 @@ function openModal(e) {
     }
     else {
         let src = e.target.src.replace("-sm","-full")
+        let alt = e.target.alt.alt
         modalImage.src = src;
+        modalImage.alt = alt;
         modal.showModal()
     }
 // Code to show modal  - Use event parameter 'e'   
