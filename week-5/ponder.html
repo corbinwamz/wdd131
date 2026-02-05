@@ -6,15 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="ponder.css">
 </head>
-<script>
-  function addStars(span) {
-    const stars = span.innerText.length;
-    span.setAttribute('aria-label', `${stars} out of 5 stars`);
-  }
-
-  const spans = document.querySelectorAll("article.movie p span");
-  spans.forEach(addStars);
-</script>
+<script src="ponder.js" defer></script>
 <body>
     <header>
     <h1>Flick Picks</h1>
