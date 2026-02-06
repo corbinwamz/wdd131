@@ -1,0 +1,71 @@
+header h1 {
+    text-align: center;
+}
+header a, h1.center {
+    color: brown;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    margin-right: 50px;
+}
+section {
+    display: block;
+}
+.desc {
+    margin-left: auto;
+    width: fit-content;
+}
+span {
+    display: block;
+}
+.center, footer p {
+    margin: 0 auto;
+    display: block;
+}
+hr {
+    background-color: rgb(255, 213, 0);
+    height: 1px;
+    opacity: 1;
+    border: none;
+}
+p.center, h1.center {
+    margin: 1em auto;
+    width: fit-content;
+}
+footer p {
+    text-align: center;
+}
+.space {
+    display: block;
+    border-bottom: solid 1px rgb(255, 213, 0);
+    height: 3em;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        width: fit-content;
+        justify-self: right;
+        padding-right: 2em;
+    }
+    .border {
+        border-left: 1px solid rgb(255, 213, 0);
+        justify-self: left;
+        padding-left: 2em;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 3em 0;
+    }
+    p.center, h1.center {
+        text-align: left;
+        margin: 1em 0;
+    }
+    .space {
+        display: none;
+    }
+}
