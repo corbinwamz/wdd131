@@ -21,7 +21,7 @@ section {
 span {
     display: block;
 }
-.center, footer p {
+img {
     margin: 0 auto;
     display: block;
 }
@@ -67,5 +67,9 @@ footer p {
     }
     .space {
         display: none;
+    }
+    .center, footer p {
+        margin: 0 auto;
+        display: block;
     }
 }
