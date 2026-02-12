@@ -22,7 +22,7 @@ header, footer {
     color: #ffc107;
     text-decoration: none;
 }
-#movie-list {
+#movie-list { 
     padding: 0 2rem;
 }
 .movie {
