@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prove.css">
+    <script src="prove.js" defer></script>
+</head>
+<body>
+    <div class="error">
+        <h1></h1>
+    </div>
+    <form action="" method="post">
+        <div class="card-container">
+            <p>Total: $199</p>
+            <p id="card-emoji">💳</p>
+            <div id="number" class="input-container">
+                <label for="card-number">Card Number</label>
+                <input type="text" name="card-number" id="card-number" placeholder="1234 5678 9101 1213" required minlength="16" maxlength="16" aria-labelledby="card-number">
+            </div>
+            <div id="holder" class="input-container">
+                <label for="card-holder">Card Holder</label>
+                <input type="text" name="card-holder" id="card-holder" placeholder="Corbin Baker" required aria-labelledby="card-holder">
+            </div>
+            <div id="expiration" class="input-container">
+                <label for="expiration-date">Expiration</label>
+                <div id="month-year">
+                    <input type="text" name="expiration-month" id="expiration-month" placeholder="MM" required minlength="2" maxlength="2" aria-labelledby="expiration-date">
+                    <input type="text" name="expiration-year" id="expiration-year" placeholder="YY" required minlength="2" maxlength="2" aria-labelledby="expiration-date">
+                </div>
+            </div>
+        </div>
+        <div id="card-back">
+            <div class="black-strip"></div>
+            <div class="cvc">
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" placeholder="xxx" name="cvc" id="cvc-input" required minlength="3" maxlength="3" aria-labelledby="cvc">
+            </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
