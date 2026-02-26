@@ -44,19 +44,26 @@ footer p {
     height: 3em;
     width: 100%;
 }
+h1 {
+    color: brown;
+}
+#title {
+    color: black;
+}
 
 @media screen and (min-width: 768px) {
     section {
         width: fit-content;
         justify-self: right;
         padding-right: 2em;
-    }
+    } 
     .border {
         border-left: 1px solid rgb(255, 213, 0);
         justify-self: left;
         padding-left: 2em;
+        width: 70%;
     }
-    main {
+    .book {
         display: grid;
         grid-template-columns: 1fr 2fr;
         margin: 3em 0;
