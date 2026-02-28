@@ -1,0 +1,56 @@
+.card {
+    max-width: 25%;
+    max-height: 80%;
+    margin: auto;
+    border-radius: 1rem;   
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.desc, .buttons {
+    padding: 1rem;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+button {
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: .2rem;
+    transition: background-color .3s ease;
+    padding: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #E8E8E8;
+}
+h1 {
+    background-color: #001F3F;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+}
+.deathMessage {
+    display: none;
+    background-color: brown;
+    color: white;
+    align-items: center;
+}
+.deathMessage.active {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.reset {
+    height: 80%;
+}
