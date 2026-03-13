@@ -2,8 +2,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: fit-content;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 #logo {
     max-width: 360px;
@@ -24,6 +27,11 @@ main {
     height: 50px;
     width: 50px;
 }
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .search p {
     margin-left: auto;
 }
@@ -33,16 +41,16 @@ hr {
 input {
     border: none;
     padding: 10px;
+    width: 90%;
 }
 input:focus {
     outline: none;
 }
 .recipe img {
-    max-height: 500px;
-    max-width: 500px;
     object-fit: cover;
     width: 100%;
     height: auto;
+    align-self: center;
 }
 .recipe {
     display: flex;
@@ -52,6 +60,8 @@ input:focus {
     border-radius: 1em;
     padding: 1em;
     margin: 2em 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 #name {
     font-family: Pacifico;
@@ -79,11 +89,20 @@ footer {
 
 @media (min-width: 768px) {
     main {
-        max-width: 50%;
+        max-width: 900px;
     }
     .recipe {
         flex-direction: row;
         gap: 20px;
+    }
+    .recipe img {
+        flex: 0 0 200px;
+        width: 200px;
+        max-width: 30%;
+        max-height: 200px;
+    }
+    .desc {
+        flex: 1;
     }
     .desc {
         gap: 30px;

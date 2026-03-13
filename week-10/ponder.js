@@ -75,7 +75,6 @@ const search = document.querySelector("button");
 const searchFor = document.querySelector("input");
 const hikeContainer = document.querySelector("#hike-container");
 
-let trails = "";
 search.addEventListener("click", () => {
   hikeContainer.innerHTML = "";
   let key = searchFor.value.toLowerCase();
@@ -89,7 +88,6 @@ search.addEventListener("click", () => {
       <div class="hike-content">
         <h2>${trail.name}</h2>
         <div class="hike-tags-${index}">
-
         </div>
         <p>${trail.description}</p>
         <p><span class="rating-${index}" role="img"></span></p>
