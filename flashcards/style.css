@@ -1,0 +1,334 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* Header */
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #F2E8CF;
+    align-items: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav img {
+    height: 90px;
+}
+.links {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+    margin-right: 2rem;
+}
+.links a {
+    padding: 7px;
+    transition: background-color .3s ease;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-self: center;
+    max-width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/notecard.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 10px;
+    transition: border .3s ease, transform .3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin: 5rem 2rem 0 2rem;
+    
+}
+.hero h1 {
+    width: 80%;
+}
+.hero h1.hidden {
+    display: none;
+}
+.hero p {
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.hero p.active {
+    display: block;
+}
+
+/* description */
+.desc-container {
+    display: flex;
+    justify-content: center;
+}
+.desc {
+    width: 70%;
+    text-align: center;
+    background-color: #6A994E;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+}
+
+/* create notecards */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+#create {
+    background-color: #BC4749;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .3s ease, border .3s ease;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+button {
+    width: fit-content;
+}
+.words {
+    background: none;
+    border: none;
+}
+.card-viewer {
+    display: flex;
+    flex-direction: column;
+    border: .5px solid black;
+    min-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.notecards {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-bottom: .5px solid black;
+    min-height: 50px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.words {  
+    cursor: pointer;
+    transition: background-color .3s ease;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: left;
+    padding: .5rem;
+}
+.words.active {
+    background-color: #F2F2F2;
+}
+.notecard-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    min-height: 50%;
+    background-color: #F2E8CF;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: #e0e0e0 solid 2px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 5rem;
+    border-top: 1px #e0e0e0 solid;
+    padding: 10px;
+}
+footer img {
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+}
+footer div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+/* modal */
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#X {
+    margin-left: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* study site */
+.dropdown-container {
+    border: .5px solid black;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    margin-top: 2rem;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+.menu {
+    display: flex;
+}
+.menu img {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    align-self: center;
+    margin-right: .5rem;
+    border-radius: 100%;
+    transition: background-color .3s ease, transform .3s ease;
+}
+.menu img.active {
+    transform: rotate(180deg);
+}
+.menu p, .checkboxes p {
+    margin-left: .5rem;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.container img {
+    max-width: 50px;
+    height: auto;
+    transition: background-color .3s ease;
+    display: block;
+    background-color: #386641;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.18));
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+.study-notecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: .5px solid black;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.checkboxes {
+    display: none;
+    padding: 10px;
+}
+.checkboxes.active {
+    display: block;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+@media (min-width: 768px) {
+    .hero:hover {
+        border: 2px solid #e0e0e0;
+        transform: translateY(-6px);
+    }
+    .card-viewer {
+        flex-direction: row ;
+    }
+    .notecard {
+        width: 50%;
+    }
+    .notecards {
+        border-right: .5px solid black;
+        border-bottom: none;
+        min-width: 100px;
+    }
+    .cards-container {
+        width: 80%;
+    }
+    .words:hover {
+        background-color: #F2F2F2;
+    }
+    .container img:hover {
+        background-color: #2B4D31;
+    }
+    .container img {
+        margin: 20px;
+    }
+    .menu img:hover {
+        background-color: #F2F2F2;
+    }
+    #create:hover {
+        transform: translateY(-6px);
+        background-color: #D65D5F;
+        border: #e0e0e0 1.5px solid;
+    }
+    .container {
+        width: 70%;
+    }
+    .study-notecard {
+        width: 50%;
+    }
+    .container {
+        border: .5px solid black;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+    .links {
+        gap: 100px;
+        margin-right: 5rem;
+    }
+    .links a:hover {
+        background-color: #EBDDB2;
+    }
+    .container img:hover {
+        transform: translateY(-6px);
+    }
+}
+@media (max-width: 600px) {
+    .container img {
+        max-width: 35px;
+    }
+}

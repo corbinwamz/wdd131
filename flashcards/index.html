@@ -4,29 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="site-plan.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            <img src="" alt="">
-            <a href="site-plan.html">Home</a>
-            <a href="study.html">Study</a>
+            <img src="images/logo.png" alt="">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="study.html" id="study">Study</a>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="" alt="">
-            <h1>Welcome to Flashcard Hero</h1>
+        <div class="hero-container">
+            <div class="hero">
+                <h1 id="title">Master Your Memory, One Sketch at a Time</h1>
+                <p id="desc">Flashable transforms your static notes into dynamic study tools. Designed for speed, accessibility, and high-impact learning, we help you organize your academic life and supercharge your recall using a science-backed, digital-notebook approach.</p>
+            </div>
         </div>
-        <div class="desc">
-            <h2>How to use:</h2>
-            <p></p>
+        <div class="desc-container">
+            <div class="desc">
+                <h2>How to use:</h2>
+                <p>Populate your personal library by adding custom digital notecards tailored to your curriculum. Once your deck is ready, head over to the Study Tab to engage with specific subjects. Our intelligent filtering system allows you to isolate complex topics, ensuring you spend your time where it matters most.</p>
+            </div>
         </div>
+        <div class="cards-container">
+            <button id="create">Create Flashcard</button>
+            <div class="card-viewer">
+                <div class="notecards">
+                </div>
+                <div class="notecard-container">
+                    <div class="notecard">
+                        <h1>Select a Flashcard</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <dialog class="modal">
+            <div class="modal-container">
+                <button id="X">X</button>
+                <h1>Create Flashcard</h1>
+                <form action="">
+                    <input id="word" type="text" name="word" placeholder="Type in a word">
+                    <input id="definition" type="text" name="definition" placeholder="Input definition">
+                    <input id="subject" type="text" name="subject" placeholder="Input subject">
+                    <button type="submit" id="submit">Create</button>
+                </form>
+            </div>
+        </dialog>
     </main>
     <footer>
-
+        <p>&copy; 2026 Flashable. All rights reserved.</p>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img class="icon" src="images/instagram_4923005.png" alt="instagram icon"></a>
+            <a href="#"><img class="icon" src="images/youtube_167310.png" alt="youtube icon"></a>
+            <a href="#"><img class="icon" src="images/pinterest_13170435.png" alt="pinterest icon"></a>
+        </div>
     </footer>
 </body>
 </html>
