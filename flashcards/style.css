@@ -1,3 +1,8 @@
+:root {
+    --heading-font: "Libre Baskerville";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -31,6 +36,16 @@ nav img {
     text-decoration: none;
     color: black;
     border-radius: 10px;
+    font-family: var(--heading-font);
+}
+h1, h2 {
+    font-family: var(--heading-font);
+}
+p {
+    font-family: var(--paragraph-font);
+}
+label {
+    font-family: var(--paragraph-font);
 }
 
 /* Hero */
@@ -41,7 +56,7 @@ nav img {
     height: 200px;
     align-items: center;
     justify-content: center;
-    background-image: url("images/notecard.png");
+    background-image: url("images/notecard.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,10 +67,12 @@ nav img {
     cursor: pointer;
     border: 2px solid transparent;
     margin: 5rem 2rem 0 2rem;
-    
+    padding: 1rem 1rem 1rem 5rem;
 }
 .hero h1 {
     width: 80%;
+    font-family: var(--heading-font);
+    color: #2F2F2F;
 }
 .hero h1.hidden {
     display: none;
@@ -64,6 +81,8 @@ nav img {
     display: none;
     font-size: 15px;
     font-weight: bold;
+    font-family: var(--paragraph-font);
+    color: #2F2F2F;
 }
 .hero p.active {
     display: block;
@@ -194,7 +213,7 @@ form {
 /* study site */
 .dropdown-container {
     border: .5px solid black;
-    width: 150px;
+    width: 200px;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
@@ -239,11 +258,11 @@ form {
     background-color: #386641;
     border-radius: 10px;
     padding: 5px;
-    margin: 5px;
+    margin: 0 auto;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
     filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.18));
     cursor: pointer;
-    transition: transform .3s ease;
+    transition: transform .3s ease, background-color .3s ease;
 }
 .study-notecard {
     display: flex;
@@ -294,9 +313,6 @@ form {
     }
     .container img:hover {
         background-color: #2B4D31;
-    }
-    .container img {
-        margin: 20px;
     }
     .menu img:hover {
         background-color: #F2F2F2;

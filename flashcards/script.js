@@ -1,3 +1,5 @@
+import { updateNotecard } from './localStorage.js';
+
 const createButton = document.querySelector(".cards-container > button");
 const modal = document.querySelector("dialog");
 const closeModalButton = document.querySelector("#X");
@@ -43,8 +45,6 @@ const addWordButton = () => {
     })
 };
 
-loadNotecards();
-addWordButton();
 function saveNotecards() {
     localStorage.setItem("flashcards", JSON.stringify(flashcards));
     localStorage.setItem("subjects", JSON.stringify(subjects));
@@ -56,8 +56,8 @@ function loadNotecards() {
     subjects = subject ? JSON.parse(subject) : [];
 }
 
-
-
+loadNotecards();
+addWordButton();
 
 if (submit) {
     submit.addEventListener("submit", (e) => {
@@ -118,6 +118,13 @@ if (arrow && checkboxes) {
         checkboxes.classList.toggle("active");
         arrow.classList.toggle("active");
     });
+
+    arrow.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            arrow.click();
+        }
+    });
 };
 
 let i = 0;
@@ -155,6 +162,12 @@ if(back) {
             updateNotecard(activeFlashcards[i].word,activeFlashcards[i].definition);
         }
     })
+    back.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            back.click();
+        }
+    });
 }
 if(forward) {
     forward.addEventListener("click", () => {
@@ -163,10 +176,10 @@ if(forward) {
             updateNotecard(activeFlashcards[i].word,activeFlashcards[i].definition);
         }
     })
-}
-
-function updateNotecard(word, def) {
-    const studyNotecard = document.querySelector(".study-notecard");
-    studyNotecard.innerHTML = `<h1>${word}</h1>
-    <p>${def}</p>`;
+    forward.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            forward.click();
+        }
+    });
 }

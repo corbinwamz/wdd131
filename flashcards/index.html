@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flashable</title>
+    <link rel="preload" href="images/notecard.webp" as="image" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <img src="images/logo.png" alt="">
+            <img src="images/logo.png" alt="Flashable logo">
             <div class="links">
                 <a href="index.html">Home</a>
                 <a href="study.html" id="study">Study</a>
@@ -37,19 +39,19 @@
                 </div>
                 <div class="notecard-container">
                     <div class="notecard">
-                        <h1>Select a Flashcard</h1>
+                        <h1>Select or Creat a Flashcard</h1>
                     </div>
                 </div>
             </div>
         </div>
-        <dialog class="modal">
+        <dialog class="modal" aria-labelledby="create-flashcard-title" aria-modal="true">
             <div class="modal-container">
-                <button id="X">X</button>
-                <h1>Create Flashcard</h1>
+                <button id="X" type="button" aria-label="Close create flashcard dialog">X</button>
+                <h1 id="create-flashcard-title">Create Flashcard</h1>
                 <form action="">
-                    <input id="word" type="text" name="word" placeholder="Type in a word">
-                    <input id="definition" type="text" name="definition" placeholder="Input definition">
-                    <input id="subject" type="text" name="subject" placeholder="Input subject">
+                    <input id="word" type="text" name="word" placeholder="Type in a word" aria-label="Flashcard word">
+                    <input id="definition" type="text" name="definition" placeholder="Input definition" aria-label="Flashcard definition">
+                    <input id="subject" type="text" name="subject" placeholder="Input subject" aria-label="Flashcard subject">
                     <button type="submit" id="submit">Create</button>
                 </form>
             </div>
