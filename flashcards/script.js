@@ -186,7 +186,10 @@ if(forward) {
 }
 studyNotecard.addEventListener("click", () => {
     if (activeFlashcards.length > 0) {
+        studyNotecard.style.cursor = 'pointer';
         document.querySelector(".study-notecard h1").classList.toggle("inactive");
         document.querySelector(".study-notecard p").classList.toggle("active");
+    } else {
+        submitBtn.style.cursor = 'not-allowed';
     }
 })
