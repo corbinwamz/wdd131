@@ -22,7 +22,7 @@ if (hero) {
 
 if (createButton && modal) {
     createButton.addEventListener("click", () => {
-        modal.show();
+        modal.showModal();
     });
 }
 if (closeModalButton && modal) {
