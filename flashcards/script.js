@@ -144,12 +144,14 @@ if(checkboxes) {
         activeFlashcards = flashcards.filter((flashcard) => {
             return activeSubjects.includes(flashcard.subject);
         })
+        studyNotecard.style.cursor = 'default';
         if(activeSubjects.length === 0) {
             document.querySelector(".study-notecard").innerHTML = `<h1>Select a Subject Above to Start Studying</h1>`;
         } else if(activeFlashcards.length === 0) {
             document.querySelector(".study-notecard").innerHTML = `<h1>Create Flashcards to Start Studying</h1>`;
         } else {
             updateNotecard(activeFlashcards[i].word,activeFlashcards[i].definition);
+            studyNotecard.style.cursor = 'pointer';
         }
     });
 }
@@ -189,7 +191,5 @@ studyNotecard.addEventListener("click", () => {
         studyNotecard.style.cursor = 'pointer';
         document.querySelector(".study-notecard h1").classList.toggle("inactive");
         document.querySelector(".study-notecard p").classList.toggle("active");
-    } else {
-        submitBtn.style.cursor = 'not-allowed';
     }
 })
