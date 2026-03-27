@@ -12,6 +12,7 @@ const study = document.querySelector("#study");
 const hero = document.querySelector(".hero");
 const desc = document.querySelector("#desc");
 const title = document.querySelector("#title");
+const studyNotecard = document.querySelector(".study-notecard");
 
 if (hero) {
     hero.addEventListener("click", () => {
@@ -183,3 +184,9 @@ if(forward) {
         }
     });
 }
+studyNotecard.addEventListener("click", () => {
+    if (activeFlashcards.length > 0) {
+        document.querySelector(".study-notecard h1").classList.toggle("inactive");
+        document.querySelector(".study-notecard p").classList.toggle("active");
+    }
+})
